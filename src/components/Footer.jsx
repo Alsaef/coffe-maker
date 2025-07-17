@@ -15,7 +15,7 @@ const Footer = () => {
                 height: '100%',
                 width: '100%',
             }}
-            className="footer sm:footer-horizontal items-center  p-10 mt-10 ">
+            className="footer sm:footer-horizontal items-center justify-around  p-10 mt-10 ">
             <div>
                 <img className="h-[50px]" src={Logo} alt="Logo" />
                 <h2 className='text-3xl py-3 text-[#331A15] text-shadow-2xs'>Espresso Emporium</h2>
