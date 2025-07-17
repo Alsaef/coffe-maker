@@ -25,7 +25,7 @@ const Navbar = () => {
         <Link to="/login" className="btn btn-sm btn-outline text-white border-white hover:bg-white hover:text-black">
           Login
         </Link>
-        <button className="btn btn-sm btn-outline text-white border-white hover:bg-white hover:text-black">
+        <button className="btn btn-sm btn-outline text-white border-white bg-red-500 ">
           Logout
         </button>
       </div>

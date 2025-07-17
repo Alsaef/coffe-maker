@@ -1,56 +1,56 @@
 import React from "react";
-import { Pencil, Trash2 } from "lucide-react";
+import { Pencil, Trash2, View } from "lucide-react";
 
 const coffeeData = [
   {
     name: "Americano Coffee",
     chef: "Mr. Matin Paul",
     price: "890 Taka",
-    image: "/images/americano.png",
+    image: "https://raw.githubusercontent.com/Alsaef/image/refs/heads/main/2.png",
   },
   {
     name: "Black Coffee",
     chef: "Mr. Nibra Sweden",
     price: "890 Taka",
-    image: "/images/black.png",
+    image: "https://raw.githubusercontent.com/Alsaef/image/refs/heads/main/3.png",
   },
   {
     name: "Espresso Coffee",
     chef: "Mrs. Morisha",
     price: "890 Taka",
-    image: "/images/espresso.png",
+    image: "https://raw.githubusercontent.com/Alsaef/image/refs/heads/main/4.png",
   },
   {
     name: "Cappuccino Coffee",
     chef: "Mr. Moruti",
     price: "890 Taka",
-    image: "/images/cappuccino.png",
+    image: "https://raw.githubusercontent.com/Alsaef/image/refs/heads/main/2.png",
   },
   {
     name: "Macchiato",
     chef: "Mr. Moruti",
     price: "890 Taka",
-    image: "/images/macchiato.png",
+    image: "https://raw.githubusercontent.com/Alsaef/image/refs/heads/main/3.png",
   },
   {
     name: "Decaf Coffee",
     chef: "Mr. Moruti",
     price: "890 Taka",
-    image: "/images/decaf.png",
+    image: "https://raw.githubusercontent.com/Alsaef/image/refs/heads/main/4.png",
   },
 ];
 
 const CoffeeDashboard = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 mt-[100px]">
       <div className="text-center mb-6">
-        <h2 className="text-3xl py-3">Our Popular Products</h2>
-        <button className="btn btn-outline btn-accent">Add Coffee ☕</button>
+        <h2 className="text-3xl py-3 text-[#331A15] text-shadow-2xs">Our Popular Products</h2>
+        <button className="btn btn-outline  bg-[#E3B577]">Add Coffee ☕</button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {coffeeData.map((coffee, index) => (
-          <div key={index} className="flex items-center gap-6 p-4 shadow-md border border-dashed border-slate-300">
+          <div key={index} className="flex items-center gap-6 p-4 shadow-md border border-dashed border-slate-300 bg-[#F5F4F1]">
             <img
               src={coffee.image}
               alt={coffee.name}
@@ -62,10 +62,13 @@ const CoffeeDashboard = () => {
               <p><strong>Price:</strong> {coffee.price}</p>
             </div>
             <div className="flex flex-col gap-2">
-              <button   className="text-yellow-600 border-yellow-400 btn">
+              <button   className="text-white bg-[#D2B48C] btn">
+                <View size={18} />
+              </button>
+              <button   className="text-white border-white btn bg-black">
                 <Pencil size={18} />
               </button>
-              <button   className="text-red-600 border-red-400 btn">
+              <button   className="text-white bg-red-400 btn">
                 <Trash2 size={18} />
               </button>
             </div>
