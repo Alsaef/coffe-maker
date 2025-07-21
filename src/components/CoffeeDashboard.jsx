@@ -1,5 +1,6 @@
 import React from "react";
 import { Pencil, Trash2, View } from "lucide-react";
+import { Link } from "react-router";
 
 const coffeeData = [
   {
@@ -45,7 +46,7 @@ const CoffeeDashboard = () => {
     <div className="p-8 mt-[100px]">
       <div className="text-center mb-6">
         <h2 className="text-3xl py-3 text-[#331A15] text-shadow-2xs">Our Popular Products</h2>
-        <button className="btn btn-outline  bg-[#E3B577]">Add Coffee ☕</button>
+       <Link to='/add-coffe'><button className="btn btn-outline  bg-[#E3B577]">Add Coffee ☕</button></Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

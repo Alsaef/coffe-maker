@@ -6,8 +6,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
-import MainLayout from './layouts/MainLayout.jsx';
+import MainLayout from './root/MainLayout.jsx';
 import Home from './Pages/Home.jsx';
+import AddCoffe from './Pages/AddCoffe.jsx';
 
 
 const router = createBrowserRouter([
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainLayout></MainLayout>,
     children: [
-      {path:"/",element:<Home></Home>}
+      {path:"/",element:<Home></Home>},
+      {path:'/add-coffe',element:<AddCoffe></AddCoffe>}
     ]
   },
 ]);
